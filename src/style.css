@@ -1,0 +1,366 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    height: 100vh; /* Set the body height to fit the screen */
+    /*overflow: hidden; /* Prevent scrolling */
+}
+
+/* Hero Section */
+#hero {
+  height: 50vh;
+  background: linear-gradient(135deg, #F2F2F2, #000000); /* Background gradient */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px 20px 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.hero-content button {
+  padding: 10px 30px;
+  font-size: 1rem;
+  background-color: #B6B09F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-content button:hover {
+  background-color: #EAE4D5;
+}
+
+
+/* Home Section */
+#home {
+  text-align: center;
+  padding: 50px;
+  margin-top: 20px;
+}
+
+#home h1 {
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+#home p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+/* Cards Container */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Make cards stack on smaller screens */
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Card Styling */
+.card {
+  background-color: #fff;
+  padding: 20px;
+  width: 230px;
+  height: auto; /* Allow flexible height */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;           /* Use flex layout */
+  flex-direction: column;  /* Vertical stacking */
+  justify-content: space-between; /* Even vertical spacing */
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  color: #000000;
+  margin-bottom: 10px; /* Slightly tighter spacing */
+}
+
+.card p {
+  font-size: 1rem;
+  color: #B6B09F;
+  flex-grow: 1; /* Let p expand to fill space if needed */
+}
+
+
+/* Tabs Menu */
+.tabs {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px  0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for tabs */
+  z-index: 10; /* Make sure tabs are always on top */
+}
+
+.tabs button {
+    background-color: #000000;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.tabs button:hover {
+    background-color: #B6B09F;
+}
+
+.tabs button.active {
+    background-color: #EAE4D5;
+}
+
+.tab-content {
+    padding: 50px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Styling Each Section */
+section h1, section h2 {
+    color: #000000;
+    text-align: center;
+}
+
+section p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#projects {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#projects h2 {
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+/*Form styling*/
+form label {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #B6B09F;
+}
+
+
+/* Icon Styling */
+.icon {
+  font-size: 3rem; /* Size of the icon */
+  color: #000000; /* Icon color */
+  margin-bottom: 15px;
+}
+
+/*About styling*/
+.about-content {
+  max-width: 800px;   /* Limit width for better readability */
+  margin: 0 auto;     /* Center it horizontally */
+  padding: 40px 20px; /* Add some spacing around it */
+  text-align: center; /* Center the text */
+  line-height: 1.6;   /* Better line spacing */
+}
+
+/*Skills styling */
+#skills {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#skills h2 {
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skill {
+  background: #000000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.skill:hover {
+  background: #B6B09F;
+}
+
+
+/*Contact styling*/
+#contact {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#contact h2 {
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background: #000000;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #B6B09F;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2rem; /* Smaller font size on smaller screens */
+  }
+
+  .card {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 160px;
+    height: 160px;
+  }
+}
